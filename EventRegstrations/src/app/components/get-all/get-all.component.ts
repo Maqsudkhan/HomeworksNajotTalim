@@ -8,7 +8,7 @@ import { User } from '../../models/user';
   styleUrl: './get-all.component.scss'
 })
 export class GetAllComponent implements OnInit {
-  users!: User[];
+  users!: User[]; 
   constructor(private crudService: CrudService){}
   
   ngOnInit(): void {
