@@ -10,6 +10,9 @@ import { DeleteComponent } from './components/delete/delete.component';
 import { UpdateComponent } from './components/update/update.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,14 +24,28 @@ import { HttpClientModule } from '@angular/common/http';
     DeleteComponent,
     UpdateComponent
   ],
+
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSlideToggleModule,
+    NgbModule,
     
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+
+
+
+
+
+
+
