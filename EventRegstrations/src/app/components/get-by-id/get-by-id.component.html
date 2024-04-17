@@ -1,1 +1,43 @@
-<p>get-by-id works!</p>
+<p>update works!</p>
+<form class="submit-form">
+
+
+        <div class="form-group">
+            <label for="id">Id</label>
+            <input type="number" class="form-control" id="id" placeholder="enter id" [(ngModel)]="myId" name="id">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="enter name" value="{{user.name}}" name="name">
+        </div>
+    
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" value="{{user.email}}" name="email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+    
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password" required value="{{user.password}}" name="password">
+        </div>
+    
+        <div class="form-group">
+            <label for="login">Login</label>
+            <input type="text" class="form-control" id="login" placeholder="enter login" required value="{{user.login}}" name="login">
+        </div>
+    
+        
+        <div class="form-group">
+            <label for="role">Role</label>
+            <input type="text" class="form-control" id="role" placeholder="enter role" required value="{{user.role}}" name="role">
+        </div>
+    
+        <br>
+</form>
+
+
+
+
+<!-- <button class="btn btn-primary" (click)="setUser()" type="submit" >Create User</button> -->
